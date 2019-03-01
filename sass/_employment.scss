@@ -1,0 +1,24 @@
+.employment {
+  display: flex;
+  justify-content: space-between;
+  @include padding-h-md();
+  @include font-size-md();
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    @include margin-b-sm();
+  }
+
+  &__list-item {
+    &:first-child {
+      @include font-bold-grey();
+    }
+
+    &:last-child {
+      @include font-size-sm();
+    }
+  }
+}

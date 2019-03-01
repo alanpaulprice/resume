@@ -1,0 +1,18 @@
+.education {
+  @include padding-h-md();
+  @include font-size-md();
+
+  &__sub-list {
+    @include padding-b-md();
+  }
+
+  &__list-item {
+    &:first-child {
+      @include font-bold-grey();
+    }
+
+    &:last-child {
+      @include padding-l-md();
+    }
+  }
+}

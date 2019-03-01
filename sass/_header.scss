@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  @include margin-b-lg();
+  @include padding-b-sm();
+  border-bottom: 1px solid $color-grey;
+
+  &__left {
+    display: flex;
+    height: 100%;
+  }
+
+  &__left-text {
+    display: flex;
+    flex-direction: column;
+    @include margin-l-sm();
+  }
+
+  &__logo-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      background-image: url(../images/jup.png);
+      clip-path: circle();
+      filter: grayscale(1) brightness(0.55);
+    }
+  }
+
+  &__logo {
+    position: relative;
+    fill: $color-white;
+    height: 7.5rem;
+  }
+
+  &__name {
+    @include font-size-xxl();
+    @include font-fill-img();
+  }
+
+  &__role {
+    @include font-size-md();
+    color: $color-black;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  &__list-item {
+    color: $color-black;
+    font-weight: 700;
+  }
+
+  &__link {
+    @include font-size-md();
+  }
+}

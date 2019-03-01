@@ -1,0 +1,18 @@
+.projects {
+  @include padding-h-md();
+
+  &__project {
+    flex-grow: 1;
+    @include margin-b-sm();
+  }
+
+  &__title {
+    @include font-size-md();
+    @include font-bold-grey();
+  }
+
+  &__description {
+    @include font-size-sm();
+    @include padding-h-sm();
+  }
+}

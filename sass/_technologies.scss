@@ -1,0 +1,11 @@
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  @include padding-h-md();
+
+  &__list-item {
+    @include font-size-md();
+    @include font-bold-grey();
+    @include margin-b-xs();
+  }
+}

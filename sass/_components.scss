@@ -1,0 +1,18 @@
+.container {
+  padding: 4rem;
+}
+
+.section {
+  @include margin-b-sm();
+  @include padding-h-sm();
+}
+
+.section-heading {
+  z-index: 1;
+  position: relative;
+  @include margin-b-sm();
+  @include font-size-lg();
+  color: $color-grey-dark;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $color-grey-light;
+}
