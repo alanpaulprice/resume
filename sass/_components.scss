@@ -8,14 +8,13 @@
 
 .section {
   @include margin-b-md();
-  @include padding-l-md();
+  @include padding-h-md();
 }
 
 .section-heading {
   @include padding-b-xs();
   @include margin-b-sm();
   @include font-size-lg();
-  // letter-spacing: 0.125rem;
   color: $color-grey-dark;
   border-bottom: 1px solid $color-grey-light;
 }

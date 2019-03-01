@@ -1,7 +1,11 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   @include margin-b-md();
+  margin-left: -1rem;
+  margin-right: -1rem;
+  height: 12rem;
 
   &__left {
     display: flex;
@@ -9,13 +13,17 @@
   }
 
   &__left-text {
+    position: relative;
     display: flex;
     flex-direction: column;
     @include margin-l-sm();
+    margin-left: 11rem;
   }
 
   &__logo-box {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +48,7 @@
   &__logo {
     position: relative;
     fill: $color-white;
-    height: 7.5rem;
+    height: 8rem;
   }
 
   &__name {
@@ -51,6 +59,7 @@
   &__role {
     @include font-size-md();
     @include font-bold-grey();
+    margin-top: -1.5rem;
   }
 
   &__list {

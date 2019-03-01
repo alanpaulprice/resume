@@ -20,13 +20,12 @@ body {
   line-height: 1.25;
   letter-spacing: 0.05rem;
   box-sizing: border-box;
-  background: hsl(0%, 0%, 50%);
+  // background: hsl(0%, 0%, 50%);
 }
 
 a {
   text-decoration: none;
   color: $color-primary;
-  // color: inherit;
 
   &:after {
     content: '➚';

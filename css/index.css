@@ -25,7 +25,6 @@ body {
   letter-spacing: 0.05rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: gray;
 }
 
 a {
@@ -55,18 +54,19 @@ li {
 
 .section {
   margin-bottom: 4rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 
 .section-heading {
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: #4d4d4d;
+  color: #404040;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +74,9 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 4rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  height: 12rem;
 }
 
 .header__left {
@@ -84,6 +87,7 @@ li {
 }
 
 .header__left-text {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,10 +96,13 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 2rem;
+  margin-left: 11rem;
 }
 
 .header__logo-box {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +136,7 @@ li {
 .header__logo {
   position: relative;
   fill: white;
-  height: 7.5rem;
+  height: 8rem;
 }
 
 .header__name {
@@ -144,7 +151,8 @@ li {
 .header__role {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #4d4d4d;
+  color: #404040;
+  margin-top: -1.5rem;
 }
 
 .header__list {
@@ -221,7 +229,7 @@ li {
 .technologies__list-item {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #4d4d4d;
+  color: #404040;
 }
 
 .technologies__list-item:not(:last-child) {
@@ -239,7 +247,7 @@ li {
 
 .education__list-item:first-child {
   font-weight: 700;
-  color: #4d4d4d;
+  color: #404040;
 }
 
 .education__list-item:last-child {
@@ -273,11 +281,16 @@ li {
 
 .employment__list-item:first-child {
   font-weight: 700;
-  color: #4d4d4d;
+  color: #404040;
+}
+
+.employment__list-item:nth-child(2) {
+  padding-left: 1rem;
 }
 
 .employment__list-item:last-child {
   font-size: 1.25rem;
+  padding-left: 2rem;
 }
 
 .employment__list-item:not(:last-child) {

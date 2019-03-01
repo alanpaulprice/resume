@@ -16,8 +16,13 @@
       @include font-bold-grey();
     }
 
+    &:nth-child(2) {
+      @include padding-l-sm();
+    }
+
     &:last-child {
       @include font-size-sm();
+      @include padding-l-md();
     }
 
     &:not(:last-child) {
