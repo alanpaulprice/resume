@@ -1,7 +1,7 @@
 // ========== FONT SIZE
 
 @mixin font-size-sm() {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 @mixin font-size-md() {
   font-size: 1.5rem;
@@ -20,6 +20,10 @@
 }
 
 // ========== MARGIN
+
+@mixin margin-b-xxs() {
+  margin-bottom: 0.5rem;
+}
 
 @mixin margin-b-xs() {
   margin-bottom: 1rem;
@@ -56,14 +60,18 @@
 }
 
 @mixin padding-h-sm() {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 @mixin padding-h-md() {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 @mixin padding-h-lg() {
+  padding: 0 4rem;
+}
+
+@mixin padding-h-xl() {
   padding: 0 8rem;
 }
 
@@ -83,6 +91,10 @@
   padding-bottom: 4rem;
 }
 
+@mixin padding-l-sm() {
+  padding-left: 1rem;
+}
+
 @mixin padding-l-md() {
   padding-left: 2rem;
 }
@@ -92,6 +104,11 @@
 @mixin font-bold-grey() {
   font-weight: 700;
   color: $color-grey-dark;
+}
+
+@mixin font-bold-primary() {
+  font-weight: 700;
+  color: $color-primary;
 }
 
 @mixin font-fill-img() {

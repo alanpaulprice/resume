@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  // border: 1px solid red;
 }
 
 html {
@@ -16,13 +17,20 @@ html {
 
 body {
   font-family: arial;
+  line-height: 1.25;
+  letter-spacing: 0.05rem;
   box-sizing: border-box;
   background: hsl(0%, 0%, 50%);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: $color-primary;
+  // color: inherit;
+
+  &:after {
+    content: '➚';
+  }
 }
 
 li {

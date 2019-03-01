@@ -2,7 +2,7 @@
   @include padding-h-md();
   @include font-size-md();
 
-  &__sub-list {
+  &__sub-list:not(:last-child) {
     @include padding-b-md();
   }
 
@@ -12,7 +12,7 @@
     }
 
     &:last-child {
-      @include padding-l-md();
+      @include padding-l-sm();
     }
   }
 }

@@ -1,9 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  @include margin-b-lg();
-  @include padding-b-sm();
-  border-bottom: 1px solid $color-grey;
+  @include margin-b-md();
 
   &__left {
     display: flex;
@@ -22,6 +20,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    clip-path: circle();
 
     &:before {
       content: '';
@@ -34,7 +33,6 @@
       height: 100%;
       width: 100%;
       background-image: url(../images/jup.png);
-      clip-path: circle();
       filter: grayscale(1) brightness(0.55);
     }
   }
@@ -52,7 +50,7 @@
 
   &__role {
     @include font-size-md();
-    color: $color-black;
+    @include font-bold-grey();
   }
 
   &__list {
@@ -63,12 +61,8 @@
     text-align: right;
   }
 
-  &__list-item {
-    color: $color-black;
-    font-weight: 700;
-  }
-
   &__link {
     @include font-size-md();
+    font-weight: 700;
   }
 }

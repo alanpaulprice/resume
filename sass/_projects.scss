@@ -3,16 +3,34 @@
 
   &__project {
     flex-grow: 1;
-    @include margin-b-sm();
+
+    &:not(:last-child) {
+      @include margin-b-sm();
+    }
+  }
+
+  &__title,
+  &__description,
+  &__built-with {
+    @include margin-b-xxs();
   }
 
   &__title {
     @include font-size-md();
-    @include font-bold-grey();
+    font-weight: 700;
   }
 
   &__description {
-    @include font-size-sm();
     @include padding-h-sm();
+    @include font-size-md();
+  }
+
+  &__built-with {
+    @include padding-h-md();
+    @include font-size-md();
+  }
+
+  &__tech {
+    font-weight: 700;
   }
 }

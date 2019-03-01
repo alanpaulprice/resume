@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 1 30%;
     @include margin-b-sm();
   }
 
@@ -19,6 +18,10 @@
 
     &:last-child {
       @include font-size-sm();
+    }
+
+    &:not(:last-child) {
+      @include margin-b-xxs();
     }
   }
 }
