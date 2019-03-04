@@ -10,6 +10,7 @@
   &__list-item {
     @include font-size-md();
     @include font-bold-grey();
+    text-align: center;
 
     &:not(:last-child) {
       @include margin-b-xs();
