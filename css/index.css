@@ -22,14 +22,14 @@ html {
 body {
   font-family: arial;
   line-height: 1.25;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  color: #003399;
+  color: #b3991a;
 }
 
 a:after {
@@ -63,6 +63,10 @@ li {
   font-size: 2rem;
   color: #404040;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.section-heading--center {
+  text-align: center;
 }
 
 .header {
@@ -230,6 +234,7 @@ li {
   font-size: 1.5rem;
   font-weight: 700;
   color: #404040;
+  text-align: center;
 }
 
 .technologies__list-item:not(:last-child) {
