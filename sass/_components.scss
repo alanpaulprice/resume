@@ -17,4 +17,8 @@
   @include font-size-lg();
   color: $color-grey-dark;
   border-bottom: 1px solid $color-grey-light;
+
+  &--center {
+    text-align: center;
+  }
 }
