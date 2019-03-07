@@ -11,53 +11,55 @@
     <link rel="stylesheet" href="dist/paper.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Alan Price | Front-End Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700"
+      rel="stylesheet"
+    />
   </head>
   <body class="A4">
     <div class="container sheet">
+      <!-- ===== BACKGROUND ===== -->
+
+      <div class="background">
+        <div class="background__div background__div--1"></div>
+        <div class="background__div background__div--2"></div>
+        <div class="background__div background__div--3"></div>
+        <div class="background__div background__div--4"></div>
+        <div class="background__div background__div--5"></div>
+        <div class="background__div background__div--6"></div>
+      </div>
+
       <!-- ===== HEADER ===== -->
-      <header class="header">
+
+      <header class="header section">
         <div class="header__left">
-          <div class="header__logo-box">
-            <svg
-              class="header__logo"
-              viewBox="0 0 95 98"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M95 45C95 68.5048 76.9791 87.8006 54 89.8247V98H44V89.6035C34.7179 88.3668 26.3302 84.3006 19.7328 78.3005L11 98H0.871704L13.0278 70.6597C7.96679 63.3811 4.99999 54.537 4.99999 45C4.99999 20.1472 25.1472 0 50 0C74.8528 0 95 20.1472 95 45ZM85 45C85 62.9773 71.4463 77.789 54 79.7739V10.2261C71.4463 12.211 85 27.0227 85 45ZM24.0724 68.5112C29.2013 74.1639 36.1533 78.1321 44 79.4877V23.5582L24.0724 68.5112ZM39.2507 11.6816C25.1797 16.2178 15 29.4201 15 45C15 50.1087 16.0945 54.9618 18.0619 59.3375L39.2507 11.6816Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="header__left-text">
-            <h1 class="header__name">Alan Price</h1>
-            <p class="header__role">Junior Front-End Web Developer</p>
-          </div>
+          <h1 class="header__name">Alan Price</h1>
+          <p class="header__role">Junior Front-End Web Developer</p>
         </div>
 
         <div class="header__right">
           <ul class="header__list">
             <li class="header__list-item">
               <a
-              class="header__link"
-              href="mailto:alanpaulprice@gmail.com"
-              target="_blank">
+                class="header__link link"
+                href="mailto:alanpaulprice@gmail.com"
+                target="_blank"
+              >
                 alanpaulprice@gmail.com
               </a>
             </li>
             <li class="header__list-item">
               <a
-              class="header__link"
-              href="tel:07531354387"
-              target="_blank">
+                class="header__link link"
+                href="tel:07531354387"
+                target="_blank"
+              >
                 07531354387
               </a>
             </li>
             <li class="header__list-item">
               <a
-                class="header__link"
+                class="header__link link"
                 target="_blank"
                 href="http://alanpaulprice.github.io/portfolio"
               >
@@ -66,9 +68,10 @@
             </li>
             <li class="header__list-item">
               <a
-              class="header__link"
-              href="https://github.com/alanpaulprice"
-              target="_blank">
+                class="header__link link"
+                href="https://github.com/alanpaulprice"
+                target="_blank"
+              >
                 GitHub
               </a>
             </li>
@@ -77,6 +80,7 @@
       </header>
 
       <!-- ===== TECHNOLOGIES ===== -->
+
       <section class="section">
         <h2 class="section-heading section-heading--center">Technologies</h2>
         <div class="technologies">
@@ -107,59 +111,94 @@
       </section>
 
       <!-- ===== PROJECTS ===== -->
+
       <section class="section">
         <h2 class="section-heading">Projects</h2>
-        <div class="projects">
-          <ul class="projects__project">
-            <li class="projects__title">
-              <a
-              href="https://alanpaulprice.github.io/metronome/"
-              target="_blank"
-              >
-                Metronome
-              </a>
-            </li>
-            <li class="projects__description">
+
+        <div class="projects__container">
+          <div class="projects__project">
+            <h3 class="projects__title">
+              Metronome
+            </h3>
+            <p class="projects__description copy">
               A richly-featured audio application.
-            </li>
-            <li class="projects__built-with">
-                Built with <span class="projects__tech">React</span>, <span class="projects__tech">Tone.js</span>, and <span class="projects__tech">Styled Components</span>.
-            </li>
-          </ul>
-
-          <ul class="projects__project">
-              <li class="projects__title">
-                <a
-                href="https://alanpaulprice.github.io/recipe-box/"
+            </p>
+            <p class="projects__built-with copy">
+              Built with <span class="projects__tech">React</span>,
+              <span class="projects__tech">Tone.js</span>, and
+              <span class="projects__tech">Styled Components</span>.
+            </p>
+            <div class="projects__links">
+              <a
+                class="button button--bold button--primary"
+                href="https://alanpaulprice.github.io/metronome"
                 target="_blank"
-                >
-                  Recipe Box
-                </a>
-              </li>
-              <li class="projects__description">
-                A personal recipe application that stores the user's recipes in <span class="projects__tech">local storage</span>.
-              </li>
-              <li class="projects__built-with">
-                  Built with <span class="projects__tech">React</span>, <span class="projects__tech">Bootstrap</span>, and a custom <span class="projects__tech">Webpack</span> configuration.
-              </li>
-            </ul>
+                >Live</a
+              >
+              <a
+                class="button button--bold button--primary"
+                href="https://github.com/alanpaulprice/metronome"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
 
-            <ul class="projects__project">
-                <li class="projects__title">
-                    <a
-                    href="https://alanpaulprice.github.io/tic-tac-toe/"
-                    target="_blank"
-                    >
-                      Tic Tac Toe
-                    </a>
-                </li>
-                <li class="projects__description">
-                  The classic game, against an unbeatable, algorithmic opponent.
-                </li>
-                <li class="projects__built-with">
-                    Built with <span class="projects__tech">JavaScript</span> and <span class="projects__tech">LESS</span>.
-                </li>
-              </ul>
+          <div class="projects__project">
+            <h3 class="projects__title">
+              Recipe Box
+            </h3>
+            <p class="projects__description copy">
+              A personal recipe application that stores the user's recipes in
+              <span class="projects__tech">local storage</span>.
+            </p>
+            <p class="projects__built-with copy">
+              Built with <span class="projects__tech">React</span>,
+              <span class="projects__tech">Bootstrap</span>, and a custom
+              <span class="projects__tech">Webpack</span> configuration.
+            </p>
+            <div class="projects__links">
+              <a
+                class="button button--bold button--primary"
+                href="https://alanpaulprice.github.io/recipe-box"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                class="button button--bold button--primary"
+                href="https://github.com/alanpaulprice/recipe-box"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <h3 class="projects__title">
+              Tic Tac Toe
+            </h3>
+            <p class="projects__description copy">
+              The classic game, against an unbeatable, algorithmic opponent.
+            </p>
+            <p class="projects__built-with copy">
+              Built with <span class="projects__tech">JavaScript</span> and
+              <span class="projects__tech">LESS</span>.
+            </p>
+            <div class="projects__links">
+              <a
+                class="button button--bold button--primary"
+                href="https://alanpaulprice.github.io/tic-tac-toe"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                class="button button--bold button--primary"
+                href="https://github.com/alanpaulprice/tic-tac-toe"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
@@ -167,44 +206,50 @@
       <section class="section">
         <h2 class="section-heading">Education</h2>
         <div class="education">
-          <ul class="education__sub-list">
-            <li class="education__list-item">
+          <div class="education__entry">
+            <p class="education__qual-name link">
               <a
                 href="https://www.freecodecamp.org/certification/alanpaulprice/legacy-front-end"
-                target="_blank"
-                >Front-End Development Certification
-                </a>
-            </li>
-            <li class="education__list-item">
+                targ_namek"
+                >Front-End Development
+                <p class="education__qual-level">Certification</p>
+              </a>
+            </p>
+            <p class="education__institution">
               freeCodeCamp.org
-            </li>
-          </ul>
+            </p>
+          </div>
 
-          <ul class="education__sub-list">
-            <li class="education__list-item">Music Technology BSc</li>
-            <li class="education__list-item">
+          <div class="education__entry">
+            <p class="education__qual-name">
+              Music Technology
+              <p class="education__qual-level">BSc</p>
+            </p>
+            <p class="education__institution">
               University of South Wales
-            </li>
-          </ul>
+            </p>
+          </div>
 
-          <ul class="education__sub-list">
-            <li class="education__list-item">
-              Access to Higher Education - Combined Studies (Diploma)
-            </li>
-            <li class="education__list-item">
+          <div class="education__entry">
+            <p class="education__qual-name">
+              Access to Higher Education
+              <p class="education__qual-level">Diploma</p>
+            </p>
+            <p class="education__institution">
               Coleg Y Cymoedd
-            </li>
-          </ul>
+            </p>
+          </div>
 
-          <ul class="education__sub-list">
-                <li class="education__list-item">
-                  A Level Computing, Music, and English
-                </li>
-            </li>
-            <li class="education__list-item">
+          <div class="education__entry">
+            <p class="education__qual-name">
+              Computing, Music, and English
+              <p class="education__qual-level">A Level</p>
+            </p>
+
+            <p class="education__institution">
               Rhymney Comprehensive School
-              </li>
-          </ul>
+            </p>
+          </div>
         </div>
       </section>
 

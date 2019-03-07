@@ -1,7 +1,15 @@
-// $color-primary: hsl(220, 25%, 62.5%); navy
-$color-primary: hsl(50, 75%, 40%);
-$color-black: hsl(0, 0%, 15%);
-$color-white: hsl(0, 0%, 100%);
-$color-grey: hsl(0, 0%, 60%);
-$color-grey-light: hsl(0, 0%, 90%);
-$color-grey-dark: hsl(0, 0%, 25%);
+$color-primary-h: 220;
+$color-primary-s: 100%;
+$color-primary-90: hsl($color-primary-h, $color-primary-s, 90%);
+$color-primary-75: hsl($color-primary-h, $color-primary-s, 75%);
+$color-primary-60: hsl($color-primary-h, $color-primary-s, 60%);
+$color-primary-40: hsl($color-primary-h, $color-primary-s, 40%);
+$color-primary-30: hsl($color-primary-h, $color-primary-s, 30%);
+$color-primary-20: hsl($color-primary-h, $color-primary-s, 20%);
+$color-primary-125: hsl($color-primary-h, $color-primary-s, 12.5%);
+
+$color-white: hsl($color-primary-h, 0%, 100%);
+$color-black: hsl($color-primary-h, 0%, 0%);
+$color-grey-90: hsl($color-primary-h, 0%, 90%);
+
+$home-bg-rotate-multi: 13.5;

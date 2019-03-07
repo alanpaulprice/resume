@@ -1,119 +1,119 @@
 // ========== FONT SIZE
 
-@mixin font-size-sm() {
+@mixin font-size-xs {
   font-size: 1.25rem;
 }
-@mixin font-size-md() {
-  font-size: 1.5rem;
+
+@mixin font-size-sm {
+  font-size: 1.75rem;
 }
 
-@mixin font-size-lg() {
+@mixin font-size-md {
   font-size: 2rem;
 }
 
-@mixin font-size-xl() {
-  font-size: 4rem;
+@mixin font-size-lg {
+  font-size: 2.5rem;
 }
 
-@mixin font-size-xxl() {
-  font-size: 7.5rem;
+@mixin font-size-xl {
+  font-size: 5rem;
+}
+
+@mixin font-size-xxl {
+  font-size: 10rem;
 }
 
 // ========== MARGIN
 
-@mixin margin-b-xxs() {
-  margin-bottom: 0.5rem;
+@mixin margin-r-sm {
+  margin-right: 1rem;
 }
 
-@mixin margin-b-xs() {
+@mixin margin-r-md {
+  margin-right: 2rem;
+}
+
+@mixin margin-b-xs {
   margin-bottom: 1rem;
 }
 
-@mixin margin-b-sm() {
+@mixin margin-b-sm {
   margin-bottom: 2rem;
 }
 
-@mixin margin-b-md() {
+@mixin margin-b-md {
   margin-bottom: 4rem;
 }
 
-@mixin margin-b-lg() {
+@mixin margin-b-lg {
   margin-bottom: 6rem;
 }
 
-@mixin margin-b-xl() {
+@mixin margin-b-xl {
   margin-bottom: 8rem;
-}
-
-@mixin margin-l-sm() {
-  margin-left: 2rem;
-}
-
-@mixin margin-l-md() {
-  margin-left: 4rem;
 }
 
 // ========== PADDING
 
-@mixin padding-sm() {
+@mixin padding-sm {
   padding: 1rem;
 }
 
-@mixin padding-h-sm() {
+@mixin padding-h-sm {
   padding: 0 1rem;
 }
 
-@mixin padding-h-md() {
+@mixin padding-h-md {
   padding: 0 2rem;
 }
 
-@mixin padding-h-lg() {
+@mixin padding-h-lg {
   padding: 0 4rem;
 }
 
-@mixin padding-h-xl() {
+@mixin padding-h-xl {
   padding: 0 8rem;
 }
 
-@mixin padding-b-xs() {
+@mixin padding-b-xs {
   padding-bottom: 0.5rem;
 }
 
-@mixin padding-b-sm() {
+@mixin padding-b-sm {
   padding-bottom: 1rem;
 }
 
-@mixin padding-b-md() {
+@mixin padding-b-md {
   padding-bottom: 2rem;
 }
 
-@mixin padding-b-lg() {
+@mixin padding-b-lg {
   padding-bottom: 4rem;
 }
 
-@mixin padding-l-sm() {
+@mixin padding-l-sm {
   padding-left: 1rem;
 }
 
-@mixin padding-l-md() {
+@mixin padding-l-md {
   padding-left: 2rem;
 }
 
-// ========== MISC
-
-@mixin font-bold-grey() {
-  font-weight: 700;
-  color: $color-grey-dark;
+@mixin padding-t-md {
+  padding-top: 2rem;
 }
 
-@mixin font-bold-primary() {
-  font-weight: 700;
-  color: $color-primary;
+// ========== FONT WEIGHT
+
+@mixin font-weight-light {
+  font-weight: 300;
 }
 
-@mixin font-fill-img() {
-  color: transparent;
-  background: url(../images/jup.png);
-  -webkit-background-clip: text;
-  filter: grayscale(1) brightness(0.55);
+@mixin font-weight-regular {
+  font-weight: 400;
+}
+
+@mixin font-weight-bold {
+  font-weight: 700;
 }

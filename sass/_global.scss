@@ -8,28 +8,22 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  // border: 1px solid red;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
-  font-family: arial;
-  line-height: 1.25;
-  letter-spacing: 0.025rem;
+  font-family: 'Ubuntu', sans-serif;
   box-sizing: border-box;
-  // background: hsl(0%, 0%, 50%);
+  line-height: 1.25;
+  background: hsl($color-primary-h, $color-primary-s, 0%);
 }
 
 a {
   text-decoration: none;
-  color: $color-primary;
-
-  &:after {
-    content: '➚';
-  }
+  color: inherit;
 }
 
 li {

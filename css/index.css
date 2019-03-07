@@ -16,24 +16,20 @@ is logo to name vertical alignment ok?
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
-  font-family: arial;
-  line-height: 1.25;
-  letter-spacing: 0.025rem;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.25;
+  background: black;
 }
 
 a {
   text-decoration: none;
-  color: #b3991a;
-}
-
-a:after {
-  content: '➚';
+  color: inherit;
 }
 
 li {
@@ -41,8 +37,11 @@ li {
 }
 
 .container {
-  padding: 3rem 4rem;
-  overflow: hidden;
+  z-index: -2;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -50,113 +49,168 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: transparent;
 }
 
 .section {
-  margin-bottom: 4rem;
   padding: 0 2rem;
 }
 
 .section-heading {
-  padding-bottom: 0.5rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #404040;
-  border-bottom: 1px solid #e6e6e6;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #ccddff;
 }
 
-.section-heading--center {
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.75rem;
   text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.button--bold {
+  font-weight: 700;
+}
+
+.button--primary {
+  background: #003399;
+  color: white;
+}
+
+.button--primary:hover {
+  background: #ccddff;
+  color: #003399;
+}
+
+.button--primary:active {
+  color: #001540;
+  background: #ccddff;
+}
+
+.button--tertiary {
+  background: transparent;
+  color: #ccddff;
+}
+
+.button--tertiary:hover {
+  color: white;
+}
+
+.button--tertiary:active {
+  color: #ccddff;
+}
+
+.button--nav {
+  padding: 0;
+}
+
+.link {
+  color: #ccddff !important;
+}
+
+.link::after {
+  content: '➚';
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.background__div {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.background__div--1 {
+  background: #00091a;
+  -webkit-transform: rotate(-13.5deg);
+          transform: rotate(-13.5deg);
+}
+
+.background__div--2 {
+  background: #001133;
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+
+.background__div--3 {
+  background: #001a4d;
+  -webkit-transform: rotate(-40.5deg);
+          transform: rotate(-40.5deg);
+}
+
+.background__div--4 {
+  background: #002266;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+
+.background__div--5 {
+  background: #002b80;
+  -webkit-transform: rotate(-67.5deg);
+          transform: rotate(-67.5deg);
+}
+
+.background__div--6 {
+  background: #003399;
+  -webkit-transform: rotate(-81deg);
+          transform: rotate(-81deg);
 }
 
 .header {
-  position: relative;
+  padding-top: 2rem;
+  margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 4rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  height: 12rem;
+  color: white;
+  text-align: center;
 }
 
-.header__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-.header__left-text {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 2rem;
-  margin-left: 11rem;
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-  -webkit-clip-path: circle();
-          clip-path: circle();
-}
-
-.header__logo-box:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/jup.png);
-  -webkit-filter: grayscale(1) brightness(0.55);
-          filter: grayscale(1) brightness(0.55);
-}
-
-.header__logo {
-  position: relative;
-  fill: white;
-  height: 8rem;
+.header__left, .header__role {
+  margin-top: -2rem;
 }
 
 .header__name {
-  font-size: 7.5rem;
-  color: transparent;
-  background: url(../images/jup.png);
-  -webkit-background-clip: text;
-  -webkit-filter: grayscale(1) brightness(0.55);
-          filter: grayscale(1) brightness(0.55);
+  font-size: 10rem;
+  font-weight: 400;
 }
 
 .header__role {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #404040;
-  margin-top: -1.5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: left;
 }
 
 .header__list {
@@ -175,45 +229,78 @@ li {
 }
 
 .header__link {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  color: #ccddff;
 }
 
 .projects {
-  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projects__project {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 2rem;
+  color: white;
+  background: rgba(0, 17, 51, 0.5);
+  border: 0.1rem solid #002266;
+  margin-bottom: 0;
+  width: 33.33333%;
 }
 
 .projects__project:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.projects__title, .projects__description, .projects__built-with {
-  margin-bottom: 0.5rem;
+  margin-right: 2rem;
 }
 
 .projects__title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects__description, .projects__built-with {
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .projects__description {
-  padding: 0 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .projects__built-with {
-  padding: 0 2rem;
-  font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .projects__tech {
   font-weight: 700;
+}
+
+.projects__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: auto;
 }
 
 .technologies {
@@ -231,9 +318,9 @@ li {
 }
 
 .technologies__list-item {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #404040;
+  color: white;
   text-align: center;
 }
 
@@ -242,21 +329,33 @@ li {
 }
 
 .education {
-  padding: 0 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
 }
 
-.education__sub-list:not(:last-child) {
-  padding-bottom: 2rem;
+.education__entry {
+  width: 50%;
 }
 
-.education__list-item:first-child {
+.education__entry:nth-child(1), .education__entry:nth-child(2) {
+  margin-bottom: 4rem;
+}
+
+.education__qual-name {
   font-weight: 700;
-  color: #404040;
 }
 
-.education__list-item:last-child {
-  padding-left: 1rem;
+.education__institution {
+  font-size: 1.75rem;
 }
 
 .employment {
@@ -267,7 +366,7 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .employment__list {
@@ -284,9 +383,13 @@ li {
   margin-bottom: 2rem;
 }
 
+.employment__list-item {
+  color: white;
+}
+
 .employment__list-item:first-child {
   font-weight: 700;
-  color: #404040;
+  color: white;
 }
 
 .employment__list-item:nth-child(2) {
@@ -294,11 +397,11 @@ li {
 }
 
 .employment__list-item:last-child {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   padding-left: 2rem;
 }
 
 .employment__list-item:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
