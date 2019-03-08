@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: space-between;
   background: transparent;
-  // border: 1px solid $color-white;
 }
 
 .section {
@@ -22,19 +21,11 @@
 
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem;
   @include font-size-sm;
   text-align: center;
   text-decoration: none;
-  transition: all 0.05s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    transform: scale(1);
-  }
+  width: 10rem;
 
   &--bold {
     font-weight: 700;
@@ -43,38 +34,16 @@
   &--primary {
     background: $color-primary-30;
     color: $color-white;
-
-    &:hover {
-      background: $color-primary-90;
-      color: $color-primary-30;
-    }
-
-    &:active {
-      color: $color-primary-125;
-      background: $color-primary-90;
-    }
   }
 
   &--tertiary {
     background: transparent;
     color: $color-primary-90;
-
-    &:hover {
-      color: $color-white;
-    }
-
-    &:active {
-      color: $color-primary-90;
-    }
-  }
-
-  &--nav {
-    padding: 0;
   }
 }
 
 .link {
-  color: $color-primary-90 !important;
+  color: $color-primary-90;
   &::after {
     content: '➚';
   }
