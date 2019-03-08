@@ -64,6 +64,10 @@
   padding: 2rem;
 }
 
+@mixin padding-v-md {
+  padding: 2rem 0;
+}
+
 @mixin padding-h-sm {
   padding: 0 1rem;
 }
