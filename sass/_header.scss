@@ -1,11 +1,11 @@
 .header {
-  @include padding-md;
+  @include padding-h-md;
   display: flex;
   justify-content: space-between;
   color: $color-white;
   text-align: center;
 
-  &__left,
+  &__name,
   &__role {
     margin-top: -2rem;
   }
@@ -29,13 +29,15 @@
     text-align: right;
   }
 
+  &__list-item {
+    &:not(:last-child) {
+      @include margin-b-xs;
+    }
+  }
+
   &__link {
     @include font-size-md;
     font-weight: 700;
     color: $color-primary-90;
-
-    &:not(:last-child) {
-      @include margin-b-xs;
-    }
   }
 }
