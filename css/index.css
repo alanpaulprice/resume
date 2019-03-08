@@ -66,22 +66,11 @@ li {
 
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem;
   font-size: 1.75rem;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: all 0.05s;
-  transition: all 0.05s;
-}
-
-.button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.button:active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  width: 10rem;
 }
 
 .button--bold {
@@ -93,35 +82,13 @@ li {
   color: white;
 }
 
-.button--primary:hover {
-  background: #ccddff;
-  color: #003399;
-}
-
-.button--primary:active {
-  color: #001540;
-  background: #ccddff;
-}
-
 .button--tertiary {
   background: transparent;
   color: #ccddff;
 }
 
-.button--tertiary:hover {
-  color: white;
-}
-
-.button--tertiary:active {
-  color: #ccddff;
-}
-
-.button--nav {
-  padding: 0;
-}
-
 .link {
-  color: #ccddff !important;
+  color: #ccddff;
 }
 
 .link::after {
@@ -186,8 +153,7 @@ li {
 }
 
 .header {
-  padding-top: 2rem;
-  margin-bottom: 6rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,6 +198,10 @@ li {
   font-size: 2rem;
   font-weight: 700;
   color: #ccddff;
+}
+
+.header__link:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .projects {
