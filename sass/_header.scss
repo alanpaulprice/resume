@@ -1,6 +1,5 @@
 .header {
-  @include padding-t-md;
-  @include margin-b-lg;
+  @include padding-md;
   display: flex;
   justify-content: space-between;
   color: $color-white;
@@ -34,5 +33,9 @@
     @include font-size-md;
     font-weight: 700;
     color: $color-primary-90;
+
+    &:not(:last-child) {
+      @include margin-b-xs;
+    }
   }
 }
