@@ -19,6 +19,13 @@
   color: $color-primary-90;
 }
 
+.footer {
+  color: $color-primary-75;
+  @include font-size-xs;
+  text-align: center;
+  margin-bottom: -1rem;
+}
+
 .button {
   display: inline-block;
   padding: 1rem;
@@ -46,5 +53,11 @@
   color: $color-primary-90;
   &::after {
     content: '➚';
+  }
+
+  &--no-icon {
+    &::after {
+      content: '';
+    }
   }
 }
