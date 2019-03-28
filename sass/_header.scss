@@ -13,6 +13,7 @@
   &__name {
     @include font-size-xxl;
     @include font-weight-regular;
+    letter-spacing: -0.05em;
   }
 
   &__role {
