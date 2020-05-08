@@ -9,14 +9,13 @@
 	}
 
 	&__name {
-		font-size: 10rem;
+		font-size: 5rem;
 		@include font-weight-regular;
 		letter-spacing: -0.05em;
 	}
 
 	&__role {
-		font-size: 2.5rem;
-		@include font-weight-light;
+		font-size: 1.25rem;
 		text-align: left;
 	}
 
@@ -35,7 +34,7 @@
 	}
 
 	&__link {
-		font-size: 2rem;
+		font-size: 1rem;
 		font-weight: 700;
 	}
 }

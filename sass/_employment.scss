@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 2rem;
-	font-size: 2rem;
+	font-size: 1rem;
 
 	&__list {
 		display: flex;
@@ -21,7 +21,7 @@
 		}
 
 		&:last-child {
-			font-size: 1.75rem;
+			font-size: 1rem;
 			padding-left: 2rem;
 		}
 
