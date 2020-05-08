@@ -1,6 +1,6 @@
 .container {
 	z-index: -2;
-	@include padding-v-md;
+	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

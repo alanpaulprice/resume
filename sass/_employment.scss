@@ -1,7 +1,7 @@
 .employment {
 	display: flex;
 	justify-content: space-between;
-	@include padding-h-md;
+	padding: 0 2rem;
 	font-size: 2rem;
 
 	&__list {
@@ -17,12 +17,12 @@
 		}
 
 		&:nth-child(2) {
-			@include padding-l-sm;
+			padding-left: 1rem;
 		}
 
 		&:last-child {
 			font-size: 1.75rem;
-			@include padding-l-md;
+			padding-left: 2rem;
 		}
 
 		&:not(:last-child) {
