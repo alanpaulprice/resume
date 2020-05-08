@@ -1,11 +1,14 @@
-$color-primary-h: 220;
-$color-primary-s: 100%;
+$color-primary-h: 30;
+$color-primary-s: 25%;
 $color-primary-90: hsl($color-primary-h, $color-primary-s, 90%);
 $color-primary-75: hsl($color-primary-h, $color-primary-s, 75%);
 $color-primary-60: hsl($color-primary-h, $color-primary-s, 60%);
+$color-primary-50: hsl($color-primary-h, $color-primary-s, 60%);
 $color-primary-40: hsl($color-primary-h, $color-primary-s, 40%);
 $color-primary-30: hsl($color-primary-h, $color-primary-s, 30%);
 $color-primary-20: hsl($color-primary-h, $color-primary-s, 20%);
+$color-primary-10: hsl($color-primary-h, $color-primary-s, 20%);
+$color-primary-5: hsl($color-primary-h, $color-primary-s, 20%);
 $color-primary-125: hsl($color-primary-h, $color-primary-s, 12.5%);
 
 $color-white: hsl($color-primary-h, 0%, 100%);
