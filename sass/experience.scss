@@ -1,0 +1,13 @@
+.experience {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+	font-size: 1rem;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+}
