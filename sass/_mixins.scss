@@ -1,33 +1,3 @@
-// ========== MARGIN
-
-@mixin margin-r-sm {
-	margin-right: 1rem;
-}
-
-@mixin margin-r-md {
-	margin-right: 2rem;
-}
-
-@mixin margin-b-xs {
-	margin-bottom: 1rem;
-}
-
-@mixin margin-b-sm {
-	margin-bottom: 2rem;
-}
-
-@mixin margin-b-md {
-	margin-bottom: 4rem;
-}
-
-@mixin margin-b-lg {
-	margin-bottom: 6rem;
-}
-
-@mixin margin-b-xl {
-	margin-bottom: 8rem;
-}
-
 // ========== PADDING
 
 @mixin padding-sm {

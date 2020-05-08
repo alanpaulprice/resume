@@ -13,7 +13,7 @@
 		text-align: center;
 
 		&:not(:last-child) {
-			@include margin-b-xs;
+			margin-bottom 1rem;
 		}
 	}
 }
