@@ -8,7 +8,7 @@
 	}
 
 	&__list-item {
-		@include font-size-md;
+		font-size: 2rem;
 		@include font-weight-bold;
 		text-align: center;
 

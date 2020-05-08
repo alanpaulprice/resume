@@ -1,29 +1,3 @@
-// ========== FONT SIZE
-
-@mixin font-size-xs {
-	font-size: 1.25rem;
-}
-
-@mixin font-size-sm {
-	font-size: 1.75rem;
-}
-
-@mixin font-size-md {
-	font-size: 2rem;
-}
-
-@mixin font-size-lg {
-	font-size: 2.5rem;
-}
-
-@mixin font-size-xl {
-	font-size: 5rem;
-}
-
-@mixin font-size-xxl {
-	font-size: 10rem;
-}
-
 // ========== MARGIN
 
 @mixin margin-r-sm {
