@@ -1,14 +1,10 @@
 .container {
 	z-index: -2;
-	padding: 2rem 0;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background: transparent;
-}
-
-.section {
-	padding: 0 2rem;
 }
 
 .section-heading {
