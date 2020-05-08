@@ -1,56 +1,54 @@
 .projects {
-  margin: 0 auto;
+	margin: 0 auto;
 
-  &__container {
-    display: flex;
-    justify-content: space-around;
-  }
+	&__container {
+		display: flex;
+		justify-content: space-around;
+	}
 
-  &__project {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    padding: 2rem;
-    color: $color-white;
-    background: hsla($color-primary-h, $color-primary-s, 10%, 0.5);
-    border: 0.1rem solid rgba($color-primary-20, 1);
-    margin-bottom: 0;
-    width: (100%/3);
+	&__project {
+		display: flex;
+		flex-direction: column;
+		align-items: space-around;
+		padding: 2rem;
+		border: 0.1rem solid $color-black;
+		margin-bottom: 0;
+		width: (100%/3);
 
-    &:not(:last-child) {
-      @include margin-r-md;
-    }
-  }
+		&:not(:last-child) {
+			@include margin-r-md;
+		}
+	}
 
-  &__title {
-    @include font-size-lg;
-    @include font-weight-light;
-    text-align: center;
-    @include margin-b-sm;
-  }
+	&__title {
+		@include font-size-lg;
+		@include font-weight-light;
+		text-align: center;
+		@include margin-b-sm;
+	}
 
-  &__description,
-  &__built-with {
-    margin: 0 auto;
-    @include font-size-md;
-    text-align: center;
-  }
+	&__description,
+	&__built-with {
+		margin: 0 auto;
+		@include font-size-md;
+		text-align: center;
+	}
 
-  &__description {
-    @include margin-b-sm;
-  }
+	&__description {
+		@include margin-b-sm;
+	}
 
-  &__built-with {
-    @include margin-b-md;
-  }
+	&__built-with {
+		@include margin-b-md;
+	}
 
-  &__tech {
-    @include font-weight-bold;
-  }
+	&__tech {
+		@include font-weight-bold;
+	}
 
-  &__links {
-    display: flex;
-    justify-content: space-around;
-    margin-top: auto;
-  }
+	&__links {
+		display: flex;
+		justify-content: space-around;
+		margin-top: auto;
+	}
 }

@@ -1,25 +1,24 @@
 .education {
-  @include font-size-md;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color: $color-white;
+	@include font-size-md;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-  &__entry {
-    width: 50%;
+	&__entry {
+		width: 50%;
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      @include margin-b-md;
-    }
-  }
+		&:nth-child(1),
+		&:nth-child(2) {
+			@include margin-b-md;
+		}
+	}
 
-  &__qual-name {
-    @include font-weight-bold;
-  }
+	&__qual-name {
+		@include font-weight-bold;
+	}
 
-  &__institution {
-    @include font-size-sm;
-  }
+	&__institution {
+		@include font-size-sm;
+	}
 }

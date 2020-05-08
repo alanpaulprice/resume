@@ -1,63 +1,60 @@
 .container {
-  z-index: -2;
-  @include padding-v-md;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: transparent;
+	z-index: -2;
+	@include padding-v-md;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: transparent;
 }
 
 .section {
-  @include padding-h-md();
+	@include padding-h-md();
 }
 
 .section-heading {
-  @include font-size-lg;
-  @include font-weight-regular;
-  @include margin-b-md;
-  text-align: center;
-  color: $color-primary-90;
+	@include font-size-lg;
+	@include font-weight-regular;
+	@include margin-b-md;
+	text-align: center;
 }
 
 .footer {
-  color: $color-primary-75;
-  @include font-size-xs;
-  text-align: center;
-  margin-bottom: -1rem;
+	@include font-size-xs;
+	text-align: center;
+	margin-bottom: -1rem;
 }
 
 .button {
-  display: inline-block;
-  padding: 1rem;
-  @include font-size-sm;
-  text-align: center;
-  text-decoration: none;
-  width: 10rem;
+	display: inline-block;
+	padding: 1rem;
+	@include font-size-sm;
+	text-align: center;
+	text-decoration: none;
+	width: 10rem;
 
-  &--bold {
-    font-weight: 700;
-  }
+	&--bold {
+		font-weight: 700;
+	}
 
-  &--primary {
-    background: $color-primary-30;
-    color: $color-white;
-  }
+	&--primary {
+		background: $color-black;
+		color: $color-white;
+	}
 
-  &--tertiary {
-    background: transparent;
-    color: $color-primary-90;
-  }
+	&--tertiary {
+		background: transparent;
+		color: $color-black;
+	}
 }
 
 .link {
-  color: $color-primary-90;
-  &::after {
-    content: '➚';
-  }
+	&::after {
+		content: '➚';
+	}
 
-  &--no-icon {
-    &::after {
-      content: '';
-    }
-  }
+	&--no-icon {
+		&::after {
+			content: '';
+		}
+	}
 }

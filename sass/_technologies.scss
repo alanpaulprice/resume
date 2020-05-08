@@ -1,20 +1,19 @@
 .technologies {
-  display: flex;
-  justify-content: space-between;
-  @include padding-h-md;
+	display: flex;
+	justify-content: space-between;
+	@include padding-h-md;
 
-  &__list {
-    width: 50%;
-  }
+	&__list {
+		width: 50%;
+	}
 
-  &__list-item {
-    @include font-size-md;
-    @include font-weight-bold;
-    color: $color-white;
-    text-align: center;
+	&__list-item {
+		@include font-size-md;
+		@include font-weight-bold;
+		text-align: center;
 
-    &:not(:last-child) {
-      @include margin-b-xs;
-    }
-  }
+		&:not(:last-child) {
+			@include margin-b-xs;
+		}
+	}
 }

@@ -1,34 +1,32 @@
 .employment {
-  display: flex;
-  justify-content: space-between;
-  @include padding-h-md;
-  @include font-size-md;
+	display: flex;
+	justify-content: space-between;
+	@include padding-h-md;
+	@include font-size-md;
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include margin-b-sm;
-  }
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include margin-b-sm;
+	}
 
-  &__list-item {
-    color: $color-white;
-    &:first-child {
-      @include font-weight-bold;
-      color: $color-white;
-    }
+	&__list-item {
+		&:first-child {
+			@include font-weight-bold;
+		}
 
-    &:nth-child(2) {
-      @include padding-l-sm;
-    }
+		&:nth-child(2) {
+			@include padding-l-sm;
+		}
 
-    &:last-child {
-      @include font-size-sm;
-      @include padding-l-md;
-    }
+		&:last-child {
+			@include font-size-sm;
+			@include padding-l-md;
+		}
 
-    &:not(:last-child) {
-      @include margin-b-xs;
-    }
-  }
+		&:not(:last-child) {
+			@include margin-b-xs;
+		}
+	}
 }

@@ -1,44 +1,42 @@
 .header {
-  @include padding-h-md;
-  display: flex;
-  justify-content: space-between;
-  color: $color-white;
-  text-align: center;
+	@include padding-h-md;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 
-  &__name,
-  &__role {
-    margin-top: -2rem;
-  }
+	&__name,
+	&__role {
+		margin-top: -2rem;
+	}
 
-  &__name {
-    @include font-size-xxl;
-    @include font-weight-regular;
-    letter-spacing: -0.05em;
-  }
+	&__name {
+		@include font-size-xxl;
+		@include font-weight-regular;
+		letter-spacing: -0.05em;
+	}
 
-  &__role {
-    @include font-size-lg;
-    @include font-weight-light;
-    text-align: left;
-  }
+	&__role {
+		@include font-size-lg;
+		@include font-weight-light;
+		text-align: left;
+	}
 
-  &__list {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-  }
+	&__list {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: right;
+	}
 
-  &__list-item {
-    &:not(:last-child) {
-      @include margin-b-xs;
-    }
-  }
+	&__list-item {
+		&:not(:last-child) {
+			@include margin-b-xs;
+		}
+	}
 
-  &__link {
-    @include font-size-md;
-    font-weight: 700;
-    color: $color-primary-90;
-  }
+	&__link {
+		@include font-size-md;
+		font-weight: 700;
+	}
 }
