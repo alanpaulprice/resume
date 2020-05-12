@@ -1,5 +1,5 @@
 .education {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
@@ -7,11 +7,6 @@
 
 	&__entry {
 		width: 50%;
-
-		&:nth-child(1),
-		&:nth-child(2) {
-			margin-bottom: 4rem;
-		}
 	}
 
 	&__qual-name {
@@ -19,6 +14,6 @@
 	}
 
 	&__institution {
-		font-size: 1rem;
+		@include font-weight-light;
 	}
 }

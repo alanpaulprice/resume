@@ -2,13 +2,13 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 2rem;
+	font-size: 1.25rem;
 
 	&__list {
 		width: 50%;
 	}
 
 	&__list-item {
-		font-size: 1rem;
 		@include font-weight-bold;
 		text-align: center;
 

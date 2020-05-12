@@ -1,0 +1,41 @@
+.experience {
+	display: flex;
+	padding: 0 2rem;
+	font-size: 1.25rem;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 2rem;
+		height: 100%;
+	}
+
+	&__role,
+	&__place,
+	&__duration {
+		//
+	}
+
+	&__role {
+		@include font-weight-bold;
+	}
+
+	&__duration {
+		@include font-weight-light;
+	}
+
+	&__detail-item {
+		// line-height: 2;
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+}
