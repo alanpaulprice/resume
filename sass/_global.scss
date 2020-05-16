@@ -9,18 +9,17 @@
 	padding: 0;
 	box-sizing: inherit;
 	color: inherit;
+	color-adjust: exact;
 }
 
 body {
-	color: $color-primary-5;
+	// color: $color-white;
+	color: transparent;
+	text-shadow: 0 0 white;
 	background: $color-grey-50;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 	line-height: 1.25;
-}
-
-.container.sheet {
-	background: $color-white;
 }
 
 a {
