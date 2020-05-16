@@ -2,6 +2,11 @@
 	background: hsl($color-primary-h, $color-primary-s, 5%);
 }
 
+.print-friendly .container.sheet
+{
+	background: white;
+}
+
 .background {
 	z-index: -1;
 	position: absolute;
@@ -50,4 +55,8 @@
 			transform: rotate(-6deg * $home-bg-rotate-multi);
 		}
 	}
+}
+
+.print-friendly .background {
+	display: none;
 }

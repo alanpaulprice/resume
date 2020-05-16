@@ -20,6 +20,11 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 	line-height: 1.25;
+
+	&.print-friendly {
+		color: hsl($color-primary-h, $color-primary-s, 5%);
+		background: white;
+	}
 }
 
 a {
