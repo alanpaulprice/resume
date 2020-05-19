@@ -13,15 +13,13 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 		margin-right: 2rem;
 		height: 100%;
-	}
 
-	&__role,
-	&__place,
-	&__duration {
-		//
+		li:not(:last-child) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__role {
