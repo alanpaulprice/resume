@@ -26,14 +26,11 @@
 		@include font-weight-bold;
 	}
 
-	&__duration {
-		@include font-weight-light;
-	}
-
 	&__detail-item {
-		// line-height: 2;
+		@include font-weight-light;
+
 		&:not(:last-child) {
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 		}
 	}
 }
