@@ -1,3 +1,3 @@
 electron-pdf \
     index.html \
-        resume_alan-paul-price_web-developer.pdf
+        resume_alan-price_front-end-developer_fc.pdf
