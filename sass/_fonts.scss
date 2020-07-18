@@ -1,100 +1,47 @@
-$font-josefin-sans-thin: 'josefin-sans-thin';
-$font-josefin-sans-thin-italic: 'josefin-sans-thin-italic';
-$font-josefin-sans-light: 'josefin-sans-light';
-$font-josefin-sans-light-italic: 'josefin-sans-light-italic';
-$font-josefin-sans-regular: 'josefin-sans-regular';
-$font-josefin-sans-italic: 'josefin-sans-italic';
-$font-josefin-sans-semibold: 'josefin-sans-semibold';
-$font-josefin-sans-semibold-italic: 'josefin-sans-semibold-italic';
-$font-josefin-sans-bold: 'josefin-sans-bold';
-$font-josefin-sans-bold-italic: 'josefin-sans-bold-italic';
+$font-open-sans-light: 'open-sans-light';
+$font-open-sans-regular: 'open-sans-regular';
+$font-open-sans-semi-bold: 'open-sans-semi-bold';
+$font-open-sans-bold: 'open-sans-bold';
+$font-open-sans-extra-bold: 'open-sans-extra-bold';
+
+$fonts-path: '../../fonts/';
 
 @font-face {
-	font-family: 'josefin-sans-thin';
-	src: url('../../fonts/josefinsans-thin-webfont.woff2') format('woff2'),
-		url('../../fonts/josefinsans-thin-webfont.woff') format('woff');
+	font-family: 'open-sans-light';
+	src: url($fonts-path + 'opensans-light-webfont.woff2') format('woff2'),
+		url($fonts-path + 'opensans-light-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'josefin-sans-thin_italic';
-    src: url('../../fonts/josefinsans-thinitalic-webfont.woff2') format('woff2'),
-         url('../../fonts/josefinsans-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'josefin-sans-light';
-	src: url('../../fonts/josefinsans-light-webfont.woff2') format('woff2'),
-		url('../../fonts/josefinsans-light-webfont.woff') format('woff');
+	font-family: 'open-sans-regular';
+	src: url($fonts-path + 'opensans-regular-webfont.woff2') format('woff2'),
+		url($fonts-path + 'opensans-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'josefin-sans-light_italic';
-    src: url('../../fonts/josefinsans-lightitalic-webfont.woff2') format('woff2'),
-         url('../../fonts/josefinsans-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'josefin-sans-regular';
-	src: url('../../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
-		url('../../fonts/josefinsans-regular-webfont.woff') format('woff');
+	font-family: 'open-sans-semi-bold';
+	src: url($fonts-path + 'opensans-semibold-webfont.woff2') format('woff2'),
+		url($fonts-path + 'opensans-semibold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'josefin-sans-italic';
-    src: url('../../fonts/josefinsans-italic-webfont.woff2') format('woff2'),
-         url('../../fonts/josefinsans-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'josefin-sans-semibold';
-	src: url('../../fonts/josefinsans-semibold-webfont.woff2') format('woff2'),
-		url('../../fonts/josefinsans-semibold-webfont.woff') format('woff');
+	font-family: 'open-sans-bold';
+	src: url($fonts-path + 'opensans-bold-webfont.woff2') format('woff2'),
+		url($fonts-path + 'opensans-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'josefin-sans-semibold-italic';
-    src: url('../../fonts/josefinsans-semibolditalic-webfont.woff2') format('woff2'),
-         url('../../fonts/josefinsans-semibolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'josefin-sans-bold';
-	src: url('../../fonts/josefinsans-bold-webfont.woff2') format('woff2'),
-		url('../../fonts/josefinsans-bold-webfont.woff') format('woff');
+	font-family: 'open-sans-extra-bold';
+	src: url($fonts-path + 'opensans-extrabold-webfont.woff2') format('woff2'),
+		url($fonts-path + 'opensans-extrabold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
-
-@font-face {
-    font-family: 'josefin-sansbold-italic';
-    src: url('../../fonts/josefinsans-bolditalic-webfont.woff2') format('woff2'),
-         url('../../fonts/josefinsans-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-

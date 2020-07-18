@@ -1,7 +1,7 @@
 // ========== FONT WEIGHT
 
 @mixin font-weight-light {
-	font-family: $font-josefin-sans-light;
+	font-family: $font-open-sans-light;
 	font-weight: 300;
 }
 
@@ -10,6 +10,6 @@
 }
 
 @mixin font-weight-bold {
-	font-family: $font-josefin-sans-bold;
+	font-family: $font-open-sans-bold;
 	font-weight: 700;
 }
