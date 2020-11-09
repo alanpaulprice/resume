@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "electron-pdf": "^4.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "electron-pdf index.html resume_alan-price_front-end-developer_fc.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanpaulprice/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanpaulprice/resume/issues"
+  },
+  "homepage": "https://github.com/alanpaulprice/resume#readme"
+}
