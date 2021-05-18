@@ -30,12 +30,12 @@
 	}
 
 	&__detail-item {
-		font-size: 1.125rem;
+		font-size: 1rem;
 		@include font-weight-light;
 		line-height: 1.5;
 
 		.emphasis {
-			@include font-weight-regular;
+			@include font-weight-bold;
 		}
 
 		&:not(:last-child) {
