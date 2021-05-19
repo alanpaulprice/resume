@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "electron-pdf index.html resume_alan-price_front-end-developer_fc.pdf"
+    "build": "node ./build.js"
   },
   "repository": {
     "type": "git",
