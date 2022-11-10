@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "electron-pdf": "^4.0.10"
+    "electron-pdf": "^20.0.0"
   },
   "devDependencies": {},
   "scripts": {
