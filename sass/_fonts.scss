@@ -1,47 +1,47 @@
-$font-open-sans-light: 'open-sans-light';
-$font-open-sans-regular: 'open-sans-regular';
-$font-open-sans-semi-bold: 'open-sans-semi-bold';
-$font-open-sans-bold: 'open-sans-bold';
-$font-open-sans-extra-bold: 'open-sans-extra-bold';
+$font-open-sans-light: "open-sans-light";
+$font-open-sans-regular: "open-sans-regular";
+$font-open-sans-semi-bold: "open-sans-semi-bold";
+$font-open-sans-bold: "open-sans-bold";
+$font-open-sans-extra-bold: "open-sans-extra-bold";
 
-$fonts-path: '../../fonts/';
+$fonts-path: "../../fonts/";
 
 @font-face {
-	font-family: 'open-sans-light';
-	src: url($fonts-path + 'opensans-light-webfont.woff2') format('woff2'),
-		url($fonts-path + 'opensans-light-webfont.woff') format('woff');
+	font-family: "open-sans-light";
+	src: url($fonts-path + "opensans-light-webfont.woff2") format("woff2"),
+		url($fonts-path + "opensans-light-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'open-sans-regular';
-	src: url($fonts-path + 'opensans-regular-webfont.woff2') format('woff2'),
-		url($fonts-path + 'opensans-regular-webfont.woff') format('woff');
+	font-family: "open-sans-regular";
+	src: url($fonts-path + "opensans-regular-webfont.woff2") format("woff2"),
+		url($fonts-path + "opensans-regular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'open-sans-semi-bold';
-	src: url($fonts-path + 'opensans-semibold-webfont.woff2') format('woff2'),
-		url($fonts-path + 'opensans-semibold-webfont.woff') format('woff');
+	font-family: "open-sans-semi-bold";
+	src: url($fonts-path + "opensans-semibold-webfont.woff2") format("woff2"),
+		url($fonts-path + "opensans-semibold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'open-sans-bold';
-	src: url($fonts-path + 'opensans-bold-webfont.woff2') format('woff2'),
-		url($fonts-path + 'opensans-bold-webfont.woff') format('woff');
+	font-family: "open-sans-bold";
+	src: url($fonts-path + "opensans-bold-webfont.woff2") format("woff2"),
+		url($fonts-path + "opensans-bold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'open-sans-extra-bold';
-	src: url($fonts-path + 'opensans-extrabold-webfont.woff2') format('woff2'),
-		url($fonts-path + 'opensans-extrabold-webfont.woff') format('woff');
+	font-family: "open-sans-extra-bold";
+	src: url($fonts-path + "opensans-extrabold-webfont.woff2") format("woff2"),
+		url($fonts-path + "opensans-extrabold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
