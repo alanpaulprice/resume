@@ -1,24 +1,27 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "electron-pdf": "^4.0.10"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "build": "node ./build.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alanpaulprice/resume.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alanpaulprice/resume/issues"
-  },
-  "homepage": "https://github.com/alanpaulprice/resume#readme"
+	"name": "resume",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"@two-admin/prettier": "^0.0.5",
+		"electron-pdf": "^25.0.0"
+	},
+	"scripts": {
+		"build": "node ./build.js",
+		"prettier": "prettier --write .",
+		"prettier:watch": "onchange \".\" -- prettier --write --ignore-unknown {{changed}}"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alanpaulprice/resume.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alanpaulprice/resume/issues"
+	},
+	"homepage": "https://github.com/alanpaulprice/resume#readme",
+	"prettier": "@two-admin/prettier"
 }
