@@ -5,7 +5,7 @@
 
 	&__name {
 		font-size: 5rem;
-		@include font-weight-bold;
+		font-weight: 700;
 		letter-spacing: -0.05em;
 		text-align: left;
 	}

@@ -22,20 +22,20 @@
 	}
 
 	&__role {
-		@include font-weight-bold;
+		font-weight: 700;
 	}
 
 	&__duration {
-		@include font-weight-light;
+		font-weight: 300;
 	}
 
 	&__detail-item {
 		font-size: 1.125rem;
-		@include font-weight-light;
+		font-weight: 300;
 		line-height: 1.5;
 
 		.emphasis {
-			@include font-weight-bold;
+			font-weight: 600;
 		}
 
 		&:not(:last-child) {

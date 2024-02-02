@@ -10,10 +10,10 @@
 	}
 
 	&__qual-name {
-		@include font-weight-bold;
+		font-weight: 700;
 	}
 
 	&__institution {
-		@include font-weight-light;
+		font-weight: 300;
 	}
 }

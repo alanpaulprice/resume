@@ -9,15 +9,15 @@
 	padding: 0;
 	box-sizing: inherit;
 	color: inherit;
-	// color-adjust: exact; browers pdf print hack
+	// color-adjust: exact; browser pdf print hack
 }
 
 body {
 	color: $color-white;
 	// color: transparent; // browser pdf print hack
-	// text-shadow: 0 0 white; // browers pdf print hack
+	// text-shadow: 0 0 white; // browser pdf print hack
 	background: hsl($color-primary-h, $color-primary-s, 5%);
-	font-family: $font-open-sans-regular, sans-serif;
+	font-family: "Open Sans";
 	box-sizing: border-box;
 	line-height: 1.25;
 
