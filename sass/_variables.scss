@@ -1,21 +1,24 @@
-$color-primary-h: 0;
-$color-primary-s: 12.5%;
-$color-primary-95: hsl($color-primary-h, $color-primary-s, 90%);
-$color-primary-90: hsl($color-primary-h, $color-primary-s, 90%);
-$color-primary-75: hsl($color-primary-h, $color-primary-s, 75%);
-$color-primary-60: hsl($color-primary-h, $color-primary-s, 60%);
-$color-primary-50: hsl($color-primary-h, $color-primary-s, 60%);
-$color-primary-40: hsl($color-primary-h, $color-primary-s, 40%);
-$color-primary-30: hsl($color-primary-h, $color-primary-s, 30%);
-$color-primary-20: hsl($color-primary-h, $color-primary-s, 20%);
-$color-primary-10: hsl($color-primary-h, $color-primary-s, 20%);
-$color-primary-5: hsl($color-primary-h, $color-primary-s, 20%);
-$color-primary-125: hsl($color-primary-h, $color-primary-s, 12.5%);
+:root {
+	--color-primary-h: 0;
+	--color-primary-s: 12.5%;
 
-$color-white: hsl($color-primary-h, 0%, 100%);
-$color-black: hsl($color-primary-h, 0%, 0%);
+	--color-text-primary: hsl(var(--color-primary-h), var(--color-primary-s), 95%);
+	--color-text-secondary: hsl(var(--color-primary-h), var(--color-primary-s), 90%);
+}
 
-$color-text-primary: hsl($color-primary-h, $color-primary-s, 95%);
-$color-text-secondary: hsl($color-primary-h, $color-primary-s, 90%);
+$color-primary-95: hsl(var(--color-primary-h), var(--color-primary-s), 90%);
+$color-primary-90: hsl(var(--color-primary-h), var(--color-primary-s), 90%);
+$color-primary-75: hsl(var(--color-primary-h), var(--color-primary-s), 75%);
+$color-primary-60: hsl(var(--color-primary-h), var(--color-primary-s), 60%);
+$color-primary-50: hsl(var(--color-primary-h), var(--color-primary-s), 60%);
+$color-primary-40: hsl(var(--color-primary-h), var(--color-primary-s), 40%);
+$color-primary-30: hsl(var(--color-primary-h), var(--color-primary-s), 30%);
+$color-primary-20: hsl(var(--color-primary-h), var(--color-primary-s), 20%);
+$color-primary-10: hsl(var(--color-primary-h), var(--color-primary-s), 20%);
+$color-primary-5: hsl(var(--color-primary-h), var(--color-primary-s), 20%);
+$color-primary-125: hsl(var(--color-primary-h), var(--color-primary-s), 12.5%);
+
+$color-white: hsl(var(--color-primary-h), 0%, 100%);
+$color-black: hsl(var(--color-primary-h), 0%, 0%);
 
 $home-bg-rotate-multi: 13.5;

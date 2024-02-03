@@ -1,5 +1,5 @@
 .container.sheet {
-	background: hsl($color-primary-h, $color-primary-s, 5%);
+	background: hsl(var(--color-primary-h), var(--color-primary-s), 5%);
 }
 
 .print-friendly .container.sheet {
@@ -25,32 +25,32 @@
 		transform-origin: top left;
 
 		&--1 {
-			background: hsl($color-primary-h, $color-primary-s, 7.5%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 7.5%);
 			transform: rotate(-1deg * $home-bg-rotate-multi);
 		}
 
 		&--2 {
-			background: hsl($color-primary-h, $color-primary-s, 10%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 10%);
 			transform: rotate(-2deg * $home-bg-rotate-multi);
 		}
 
 		&--3 {
-			background: hsl($color-primary-h, $color-primary-s, 12.5%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 12.5%);
 			transform: rotate(-3deg * $home-bg-rotate-multi);
 		}
 
 		&--4 {
-			background: hsl($color-primary-h, $color-primary-s, 15%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 15%);
 			transform: rotate(-4deg * $home-bg-rotate-multi);
 		}
 
 		&--5 {
-			background: hsl($color-primary-h, $color-primary-s, 20%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 20%);
 			transform: rotate(-5deg * $home-bg-rotate-multi);
 		}
 
 		&--6 {
-			background: hsl($color-primary-h, $color-primary-s, 25%);
+			background: hsl(var(--color-primary-h), var(--color-primary-s), 25%);
 			transform: rotate(-6deg * $home-bg-rotate-multi);
 		}
 	}
