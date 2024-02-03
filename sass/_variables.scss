@@ -1,5 +1,5 @@
-$color-primary-h: 180;
-$color-primary-s: 100%;
+$color-primary-h: 0;
+$color-primary-s: 12.5%;
 $color-primary-95: hsl($color-primary-h, $color-primary-s, 90%);
 $color-primary-90: hsl($color-primary-h, $color-primary-s, 90%);
 $color-primary-75: hsl($color-primary-h, $color-primary-s, 75%);
@@ -14,5 +14,8 @@ $color-primary-125: hsl($color-primary-h, $color-primary-s, 12.5%);
 
 $color-white: hsl($color-primary-h, 0%, 100%);
 $color-black: hsl($color-primary-h, 0%, 0%);
+
+$color-text-primary: hsl($color-primary-h, $color-primary-s, 95%);
+$color-text-secondary: hsl($color-primary-h, $color-primary-s, 90%);
 
 $home-bg-rotate-multi: 13.5;
