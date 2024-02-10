@@ -8,7 +8,8 @@
 		"electron": "^28.2.1",
 		"electron-pdf": "^25.0.0",
 		"node-sass": "^9.0.0",
-		"onchange": "^7.1.0"
+		"onchange": "^7.1.0",
+		"paper-css": "^0.4.1"
 	},
 	"scripts": {
 		"build": "node ./build.js",
