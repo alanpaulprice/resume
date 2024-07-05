@@ -17,7 +17,7 @@ function replaceString(file, find, replace) {
 	fs.writeFileSync(file, contents);
 }
 
-shellSync("electron-pdf index.html resume_alan-price_front-end-developer_fc.pdf");
+shellSync("electron-pdf index.html resume_alan-price_web-developer_fc.pdf");
 replaceString("./index.html", '<body class="A4 print--friendly">', '<body class="A4 print-friendly">');
-shellSync("electron-pdf index.html resume_alan-price_front-end-developer_pf.pdf");
+shellSync("electron-pdf index.html resume_alan-price_web-developer_pf.pdf");
 replaceString("./index.html", '<body class="A4 print-friendly">', '<body class="A4 print--friendly">');
